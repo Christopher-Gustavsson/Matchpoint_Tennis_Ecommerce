@@ -1,14 +1,21 @@
-import React from 'react';
+import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/js/materialize.min';
 import '../assets/css/app.scss';
-import logo from '../assets/images/logo.svg';
+import React, {Component} from 'react';
+import {Route} from 'react-router-dom';
+import Nav from"./nav";
 
-const App = () => (
-    <div>
-        <div className="app">
-            <img src={logo} className="logo rotate"/>
-            <h1>Welcome To React</h1>
-        </div>
-    </div>
-);
+
+class App extends Component{ 
+    
+    render(){
+        return(
+            <div>
+                <Nav />
+            </div>
+        );
+    }
+    
+}
 
 export default App;
