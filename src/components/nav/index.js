@@ -10,11 +10,20 @@ class Nav extends Component{
             <Fragment>
                 <nav className="black lighten-1">
                     <div className="nav-wrapper">
-                    
-                        <h2>MatchPoint</h2>
+                        <Link className="brand-logo" to="/"> MatchPoint</Link>
+                        
+                        <ul className="right">
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="products">Products</Link>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
-            </Fragment>
+                </Fragment>
+                
         );
         
     }
