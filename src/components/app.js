@@ -4,6 +4,8 @@ import '../assets/css/app.scss';
 import React, {Component} from 'react';
 import {Route} from 'react-router-dom';
 import Nav from"./nav";
+import ProductRoutes from './products';
+import Home from "./home";
 
 
 class App extends Component{ 
@@ -12,6 +14,8 @@ class App extends Component{
         return(
             <div>
                 <Nav />
+                <Route path="/" exact component={Home} />
+                <Route path="/products" component={ProductRoutes} />
             </div>
         );
     }
