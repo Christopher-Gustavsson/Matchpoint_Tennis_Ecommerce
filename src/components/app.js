@@ -1,12 +1,11 @@
-import 'materialize-css/dist/css/materialize.min.css';
-import 'materialize-css/dist/js/materialize.min';
-import '../assets/css/app.scss';
-import React, {Component} from 'react';
-import {Route} from 'react-router-dom';
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css/dist/js/materialize.min";
+import "../assets/css/app.scss";
+import React, {Component} from "react";
+import {Route} from "react-router-dom";
 import Nav from"./nav";
-import ProductRoutes from './products';
-import Home from "./home";
-
+import ProductRoutes from "./products";
+import Home from "./landing";
 
 class App extends Component{ 
     
